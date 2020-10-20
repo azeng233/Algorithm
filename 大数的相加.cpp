@@ -55,7 +55,7 @@ int main()
 		}
 	}
 	c[i] = z + '0';
-	printf("两数相加的值为：\n");
+	printf("涓ゆ暟鐩稿姞鐨勫�间负锛歕n");
 	reverse(c,(strlen(c) / sizeof(c[0])));
 	printf("\nc[] = ");
 	puts(c);
