@@ -16,9 +16,9 @@ int main()
 	gets(b);
 	int n = strlen(a) / sizeof(a[0]);
 	int m = strlen(b) / sizeof(b[0]);
-	puts(a);
-	puts(b);
-	printf("n = %d,m = %d\n",n,m);
+//	puts(a);
+//	puts(b);
+//	printf("n = %d,m = %d\n",n,m);
 	int i = 0;
 	int z = 0;
 	while(n > 0 && m > 0) {
@@ -55,7 +55,7 @@ int main()
 		}
 	}
 	c[i] = z + '0';
-	printf("涓ゆ暟鐩稿姞鐨勫�间负锛歕n");
+	printf("两数相加的值为：\n");
 	reverse(c,(strlen(c) / sizeof(c[0])));
 	printf("\nc[] = ");
 	puts(c);
