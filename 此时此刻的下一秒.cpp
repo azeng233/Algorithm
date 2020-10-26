@@ -55,6 +55,7 @@ void inputDate(){
 }
 
 int main(){
+//	printf("\n\n\n   现在时间是：");
 	inputDate();
 	printf("此时此刻的下一秒是：");
 	// second += 1;
@@ -72,5 +73,6 @@ int main(){
 			}
 	}
 	printf("%02d-%02d-%02d %02d:%02d:%02d",year,month,day,hour,minute,second);  //测试专用 
+//	printf("\n   祝你19岁生日快乐！\n\n\n");
 	return 0;
 } 
