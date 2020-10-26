@@ -46,7 +46,7 @@ int main()
 		}	
 	}
 	c[i] = z + '0';
-	printf("Á½ÊıÏà¼ÓµÄÖµÎª£º");
+	printf("ä¸¤æ•°ç›¸åŠ çš„å€¼ä¸ºï¼š");
 	reverse(c,(strlen(c) / sizeof(c[0])));
 	return 0;
 }
