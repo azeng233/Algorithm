@@ -12,7 +12,7 @@ void p(int &day,int &month,int &year){
 		case 1:
 		case 3:
 		case 5:
-        case 7:
+    case 7:
 		case 8:
 		case 10: if(day > 31){
 			month ++;
