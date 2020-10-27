@@ -14,7 +14,7 @@ void p(int &day,int &month,int &year){
 		case 5:
         case 7:
 		case 8:
-		case 10: if(day >= 31){
+		case 10: if(day > 31){
 			month ++;
 			day = 1;
 		}
@@ -26,7 +26,7 @@ void p(int &day,int &month,int &year){
 			}
 		}
 			else{
-				if(day >=28){
+				if(day >28){
 					month ++;
 					day = 1;
 				}
@@ -35,12 +35,12 @@ void p(int &day,int &month,int &year){
 		case 4:
 		case 6:
 		case 9:
-		case 11: if(day >= 30){
+		case 11: if(day > 30){
 				month ++;
 				day = 1;
 			}
 			break;
-		case 12: if(day >= 31){
+		case 12: if(day > 31){
 				year ++;
 				month = 1;
 				day = 1;
