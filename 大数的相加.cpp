@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 
+int min(int a,int b) {
+	return a<b?a:b;
+}
+
 void reverse(char *a, int n) {
-	if(a[n-1] != '0') {
-		printf("%c",a[n-1]);
-	}
-	for(int i = n-2; i>=0; i--) {
+	for(int i = n-1; i>=0; i--) {
 		printf("%c",a[i]);
 	}
 }
@@ -16,48 +17,36 @@ int main()
 	gets(b);
 	int n = strlen(a) / sizeof(a[0]);
 	int m = strlen(b) / sizeof(b[0]);
-//	puts(a);
-//	puts(b);
-//	printf("n = %d,m = %d\n",n,m);
+	
+	puts(a);
+	puts(b);
+	printf("n = %d,m = %d\n",n,m);
 	int i = 0;
 	int z = 0;
-	while(n > 0 && m > 0) {
+	while(n != 0 && m != 0) {
 		int sum = a[--n]-'0' + b[--m]-'0' + z;
 		if( sum >= 10) {
 			c[i++] = sum % 10 + '0';
 			z = sum / 10;
 		}
 		else {
-			c[i++] = sum+'0';
 			z = 0;
+			c[i++] = sum+'0';
 		}
 	}
-	while(n > 0) {
-		int sum = a[--n]-'0' + z;
+	while(n!=0) {
+		int sum = a[--n] + z;
 		if( sum >= 10) {
 			c[i++] = sum % 10 + '0';
 			z = sum / 10;
 		}
 		else {
-			c[i++] = sum+'0';
 			z = 0;
-		}
-	}
-	while(m > 0) {
-		int sum = b[--m]-'0' + z;
-		if( sum >= 10) {
-			c[i++] = sum % 10 + '0';
-			z = sum / 10;
-		}
-		else {
 			c[i++] = sum+'0';
-			z = 0;
-		}
+		}	
 	}
 	c[i] = z + '0';
-	printf("Á½ÊıÏà¼ÓµÄÖµÎª£º\n");
+	printf("ä¸¤æ•°ç›¸åŠ çš„å€¼ä¸ºï¼š");
 	reverse(c,(strlen(c) / sizeof(c[0])));
-	printf("\nc[] = ");
-	puts(c);
 	return 0;
 }
