@@ -12,7 +12,11 @@ void p(int &day,int &month,int &year){
 		case 1:
 		case 3:
 		case 5:
+<<<<<<< HEAD
     case 7:
+=======
+                case 7:
+>>>>>>> bb2f7c4c1a48e06818c8a2e33111a2bac8bb1402
 		case 8:
 		case 10: if(day > 31){
 			month ++;
@@ -55,9 +59,9 @@ void inputDate(){
 }
 
 int main(){
-//	printf("\n\n\n   ÏÖÔÚÊ±¼äÊÇ£º");
+//	printf("\n\n\n   ç°åœ¨æ—¶é—´æ˜¯ï¼š");
 	inputDate();
-	printf("´ËÊ±´Ë¿ÌµÄÏÂÒ»ÃëÊÇ£º");
+	printf("æ­¤æ—¶æ­¤åˆ»çš„ä¸‹ä¸€ç§’æ˜¯ï¼š");
 	// second += 1;
 	if(second >= 60){
 		minute ++;
@@ -72,7 +76,7 @@ int main(){
 					}
 			}
 	}
-	printf("%02d-%02d-%02d %02d:%02d:%02d",year,month,day,hour,minute,second);  //²âÊÔ×¨ÓÃ 
-//	printf("\n   ×£Äã19ËêÉúÈÕ¿ìÀÖ£¡\n\n\n");
+	printf("%02d-%02d-%02d %02d:%02d:%02d",year,month,day,hour,minute,second);  //æµ‹è¯•ä¸“ç”¨ 
+//	printf("\n   ç¥ä½ 19å²ç”Ÿæ—¥å¿«ä¹ï¼\n\n\n");
 	return 0;
 } 
