@@ -12,11 +12,7 @@ void p(int &day,int &month,int &year){
 		case 1:
 		case 3:
 		case 5:
-<<<<<<< HEAD
     case 7:
-=======
-                case 7:
->>>>>>> bb2f7c4c1a48e06818c8a2e33111a2bac8bb1402
 		case 8:
 		case 10: if(day > 31){
 			month ++;
@@ -61,7 +57,7 @@ void inputDate(){
 int main(){
 //	printf("\n\n\n   现在时间是：");
 	inputDate();
-	printf("此时此刻的下一秒是：");
+	printf("此时此刻的下一秒是�?");
 	// second += 1;
 	if(second >= 60){
 		minute ++;
