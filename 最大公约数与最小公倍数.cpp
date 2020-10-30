@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 #include <stdio.h>
  
-void f(int &m,int &n){   //×îĞ¡¹«±¶Êı
+void f(int &m,int &n){   //æœ€å°å…¬å€æ•°
    if(m < n){
     int c = m;
     m = n;
@@ -13,10 +12,10 @@ void f(int &m,int &n){   //×îĞ¡¹«±¶Êı
        k = i;
        break;
     }
-  printf("×îĞ¡¹«±¶ÊıÎª:%d\n",k);
+  printf("æœ€å°å…¬å€æ•°ä¸º:%d\n",k);
 } 
 
-void p(int m,int n){   //×î´ó¹«Ô¼Êı
+void p(int m,int n){   //æœ€å¤§å…¬çº¦æ•°
   if(m < n){
     int c = m;
     m = n;
@@ -28,12 +27,12 @@ void p(int m,int n){   //×î´ó¹«Ô¼Êı
     n = r;
     r = m % n;
   }
-  printf("×î´ó¹«Ô¼ÊıÎª:%d",n);
+  printf("æœ€å¤§å…¬çº¦æ•°ä¸º:%d",n);
 }
 
 int main(){
   int m,n;
-  printf("ÇëÊäÈëÒª±È½ÏµÄÁ½¸öÊı:");
+  printf("è¯·è¾“å…¥è¦æ¯”è¾ƒçš„ä¸¤ä¸ªæ•°:");
   scanf("%d %d",&m,&n);
   f(m,n);
   p(m,n);
@@ -42,7 +41,7 @@ int main(){
 =======
 #include <stdio.h>
  
-void f(int &m,int &n){   //×îĞ¡¹«±¶Êı
+void f(int &m,int &n){   //æœ€å°å…¬å€æ•°
    if(m < n){
     int c = m;
     m = n;
@@ -54,10 +53,10 @@ void f(int &m,int &n){   //×îĞ¡¹«±¶Êı
        k = i;
        break;
     }
-  printf("×îĞ¡¹«±¶ÊıÎª:%d\n",k);
+  printf("æœ€å°å…¬å€æ•°ä¸º:%d\n",k);
 } 
 
-void p(int m,int n){   //×î´ó¹«Ô¼Êı
+void p(int m,int n){   //æœ€å¤§å…¬çº¦æ•°
   if(m < n){
     int c = m;
     m = n;
@@ -69,15 +68,14 @@ void p(int m,int n){   //×î´ó¹«Ô¼Êı
     n = r;
     r = m % n;
   }
-  printf("×î´ó¹«Ô¼ÊıÎª:%d",n);
+  printf("æœ€å¤§å…¬çº¦æ•°ä¸º:%d",n);
 }
 
 int main(){
   int m,n;
-  printf("ÇëÊäÈëÒª±È½ÏµÄÁ½¸öÊı:");
+  printf("è¯·è¾“å…¥è¦æ¯”è¾ƒçš„ä¸¤ä¸ªæ•°:");
   scanf("%d %d",&m,&n);
   f(m,n);
   p(m,n);
   return 0;
 }
->>>>>>> 50f3033d44e5cc7dabe5e2f50c3a5cd9d5b158df
