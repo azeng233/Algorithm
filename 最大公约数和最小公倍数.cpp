@@ -8,7 +8,8 @@ int main(){
     a = b;
     b = r;
   }while(r != 0);
-  printf("æœ€å¤§å…¬çº¦æ•°ä¸º:%d",a);
-  printf("æœ€å¤§å…¬å€æ•°ä¸ºï¼š%d",m*n/a);
+  printf("×î´ó¹«Ô¼ÊıÎª:%d",a);
+  printf("×î´ó¹«±¶ÊıÎª£º%d",m*n/a);
   return 0;
 }
+

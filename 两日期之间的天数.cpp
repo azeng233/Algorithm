@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int year2,month2,day2;   //è®¾ç½®ä¸ºå…¨å±€å˜é‡ä»¥ä¾¿åœ¨å‡½æ•°ä¸­è°ƒç”¨è¿™ä¸¤ä¸ªå‚æ•°
+int year2,month2,day2;   //ÉèÖÃÎªÈ«¾Ö±äÁ¿ÒÔ±ãÔÚº¯ÊıÖĞµ÷ÓÃÕâÁ½¸ö²ÎÊı
 int cnt = 0;
 
 int isPrime(int year) {
@@ -56,17 +56,18 @@ int f1(int year,int month,int day){
     else{
       day++;
       cnt++;
-      f(year,month,day);   //è¿›è¡Œæ—¥æœŸçš„è¿›åˆ¶ï¼Œè¯¦ç»†çš„ä»£ç å¯ä»¥çœ‹ä¸€ä¸‹æ­¤æ—¶æ­¤åˆ»çš„ä¸‹ä¸€ç§’
-      f1(year,month,day);  //åå¤è°ƒç”¨f1()å‡½æ•°æ¥è¿›è¡Œè¿›ä½
+      f(year,month,day);   //½øĞĞÈÕÆÚµÄ½øÖÆ£¬ÏêÏ¸µÄ´úÂë¿ÉÒÔ¿´Ò»ÏÂ´ËÊ±´Ë¿ÌµÄÏÂÒ»Ãë
+      f1(year,month,day);  //·´¸´µ÷ÓÃf1()º¯ÊıÀ´½øĞĞ½øÎ»
     }
 }
 
 int main(){
   int year1,month1,day1;
-  printf("è¯·åˆ†åˆ«è¾“å…¥ä¸¤ä¸ªæ—¥æœŸ:\n");
+  printf("Çë·Ö±ğÊäÈëÁ½¸öÈÕÆÚ:\n");
   scanf("%d-%d-%d",&year1,&month1,&day1);
   scanf("%d-%d-%d",&year2,&month2,&day2);
   f1(year1,month1,day1);
-  printf("ä»%d-%d-%dåˆ°%d-%d-%dä¹‹é—´å…±æœ‰%då¤©ã€‚",year1,month1,day1,year2,month2,day2,cnt);
+  printf("´Ó%d-%d-%dµ½%d-%d-%dÖ®¼ä¹²ÓĞ%dÌì¡£",year1,month1,day1,year2,month2,day2,cnt);
   return 0;
 }
+

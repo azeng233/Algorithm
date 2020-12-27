@@ -56,7 +56,7 @@ void inputDate(){
 
 int main(){
 	inputDate();
-	printf("姝ゆ椂姝ゅ埢鐨勪笅涓�绉掓槸:");
+	printf("此时此刻的下一秒是:");
 	// second += 1;
 	if(second >= 60){
 		minute ++;
@@ -74,3 +74,4 @@ int main(){
 	printf("%02d-%02d-%02d %02d:%02d:%02d",year,month,day,hour,minute,second);  
 	return 0;
 } 
+
