@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <string.h>
-
-int min(int a,int b) {
-	return a<b?a:b;
-}
-
+//曾晨写的
 void reverse(char *a, int n) {
-	for(int i = n-1; i>=0; i--) {
+	if(a[n-1] != '0') {
+		printf("%c",a[n-1]);
+	}
+	for(int i = n-2; i>=0; i--) {
 		printf("%c",a[i]);
 	}
 }
@@ -35,7 +34,7 @@ int main()
 		}
 	}
 	while(n!=0) {
-		int sum = a[--n] + z;
+		int sum = a[--n] -'0' + z;
 		if( sum >= 10) {
 			c[i++] = sum % 10 + '0';
 			z = sum / 10;
@@ -44,6 +43,17 @@ int main()
 			z = 0;
 			c[i++] = sum+'0';
 		}	
+	}
+	while(m!=0){
+		int sum = b[--m]-'0' + z;
+		if( sum >= 10) {
+			c[i++] = sum % 10 + '0';
+			z = sum / 10;
+		}
+		else {
+			c[i++] = sum+'0';
+			z = 0;
+		}
 	}
 	c[i] = z + '0';
 	printf("两数相加的值为：");
